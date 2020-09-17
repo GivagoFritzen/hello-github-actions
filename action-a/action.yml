@@ -1,21 +1,17 @@
-name: "Hello Actions"
-description: "Greet someone"
-author: "I"
-
+name: Hello Actions
+description: Greet someone
+author: I
 inputs:
   MY_NAME:
-    description: "Who to greet"
+    description: Who to greet
     required: true
-    default: "World"
-
+    default: World
 runs:
-  using: "docker"
-  image: "Dockerfile"
-
+  using: docker
+  image: Dockerfile
 branding:
-  icon: "mic"
-  color: "purple"
-
+  icon: mic
+  color: purple
 jobs:
   build:
     name: Hello world action
@@ -24,4 +20,4 @@ jobs:
       - uses: actions/checkout@v1
       - uses: ./action-a
         with:
-          MY_NAME: "Givago"
+          MY_NAME: Givago

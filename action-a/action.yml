@@ -17,7 +17,7 @@ branding:
   color: "purple"
 
 jobs:
-  biuild:
+  build:
     name: Hello world action =)
     runs-on: ubuntu-lastest
     steps:
